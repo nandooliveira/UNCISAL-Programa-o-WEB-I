@@ -75,3 +75,34 @@ h1#cabecalho {
 h1, h4 {
     color: red;
 }
+
+/* a { */
+/*     color: #888; */
+/* } */
+
+a:link {
+    color: white;
+    font-weight: bold;
+    background-color: #000099;
+    padding: 3px;
+    border-radius: 5px;
+    border-bottom: 5px solid red;
+}
+
+a:visited {
+    color: pink;
+    /* Por que não dá para mudar o tamanho da fonte só para visited?? */
+    border-bottom: 5px solid green;
+}
+
+a:hover {
+    color: red;
+    background: #000044;
+}
+
+
+
+
+
+
+
