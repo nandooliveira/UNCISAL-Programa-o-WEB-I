@@ -3,6 +3,7 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
 }
 
+
 /* seleciona qualquer elemento que estiver dentro
 de um elemento que contenha o id minhadiv */
 #minhadiv * {
@@ -100,9 +101,26 @@ a:hover {
     background: #000044;
 }
 
+a:not(#uncisal) {
+    border-right: 5px solid red;
+}
 
+p::first-letter {
+    font-size: 50px;
+}
 
+li:nth-child(1) {
+    color: green !important;
+    font-size: 40px;
+}
 
+/* :not(.pontilhado) { */
+/*     color: darkgray; */
+/* } */
+
+/* *:not(p) { */
+/*     color: darkgray; */
+/* } */
 
 
 
