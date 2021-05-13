@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Especificidade</title>
+
+    <style>
+        .brown {
+            color: rgb(173, 119, 119)
+        }
+
+        div {
+            border: 1px solid blue;
+            border-radius: 50%;
+        }
+
+        p {
+            border: 1px solid red;
+            padding: 5px;
+            margin: 0;
+        }
+
+        a {
+            border: inherit;
+        }
+
+        span {
+            border: inherit;
+        }
+    </style>
+</head>
+<body>
+    <p id="id_titulo" class="titulo">Teste</p>
+    <p>Teste2</p>
+
+    <p class="brown">Teste3</p>
+    <p class="yellow">Teste4</p>
+    <p class="brown yellow">Teste5</p>
+    <p class="brown" style="color: chartreuse;">Teste6</p>
+
+    <div>
+        <p>Paragrafo na div</p>
+        <span>Paragrafo na div</span>
+        <a href="#">Paragrafo na div</a>
+    </div>
+</body>
+</html>

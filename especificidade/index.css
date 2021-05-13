@@ -1,0 +1,41 @@
+p { /* peso 1 */
+    color: green
+}
+
+p#id_titulo { /* peso 101 */
+    color: blue
+}
+
+p.titulo { /* peso 11 */
+    color: red
+}
+
+.brown { /* 10 */
+    color: brown
+}
+
+.yellow { /* 10 */
+    color: yellow
+}
+
+body {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+/* .brown.yellow {
+    color: orange
+} */
+
+/* Tipos de seletor */
+/*
+- Seletor de Tipo/Elemento  (1)
+    => tags: p, h1, div, table...
+    => pseudo-elements: ::first-letter ::first-line
+
+- Seletores de classe       (10)
+    => class: .titulo, .test, ...
+    => pseudo-classes: :link, :hover, :active, ...
+
+- Seletores de ID           (100)
+    => id: #titulo, #teste
+*/
