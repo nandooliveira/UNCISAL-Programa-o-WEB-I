@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Position</title>
+  <style>
+    /* static | absolute | */
+    div {
+      width: 300px;
+      height: 150px;
+      border: 1px solid blue;
+      position: static;
+    }
+
+    .relative { 
+      position: relative;
+      left: 30px;
+      top: 20px
+    }
+
+    .absolute {
+      position: absolute;
+      left: 10px;
+      top: 5px;
+    }
+
+    .fixed {
+      position: fixed;
+      right: 10px;
+      bottom: 0px;
+      width: 100px;
+    }
+
+    .sticky {
+      position: sticky;
+      bottom: 2px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Position Static</h1>
+  <div class="static">
+    Static
+  </div>
+
+
+  <h1>Position Relative</h1>
+  <div class="relative">
+    Relative
+  </div>
+
+  <h1>Position Absolute</h1>
+  <div style="position: relative; border: 1px solid red">
+    <div class="absolute">
+      Absolute
+    </div>
+  </div>
+
+  <h1>Position Sticky</h1>
+  <div class="sticky">
+    Sticky
+  </div>
+
+  <h1>Position Fixed</h1>
+  <div class="fixed">
+    Fixed
+  </div>
+</body>
+</html>
