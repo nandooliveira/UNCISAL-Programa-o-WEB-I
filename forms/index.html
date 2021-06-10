@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        label {
+            display: inline-block;
+        }
+        .input-field {
+            display: block;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Forms</h1>
+
+    <!--
+        GET POST UPDATE DELETE
+        GET  -> Buscar
+        POST ->
+    -->
+
+    <form method="POST"> <!-- GET POST -->
+        <div class="input-field">
+            <label for="nome">Nome:</label>
+            <input id="nome" name="nome" type="text" list="nomes" />
+            <datalist id="nomes">
+                <option value="Fernando">
+                <option value="Antonio">
+                <option value="Francisca">
+            </datalist>
+        </div>
+
+        <fieldset>
+            <legend>Informações de Contato:</legend>
+            <div class="input-field">
+                <label for="email">Email:</label>
+                <input id="email" name="email" type="email" />
+            </div>
+
+            <div class="input-field">
+                <label for="number">Número:</label>
+                <input id="number" name="number" type="number" min="5" max="10" step="0.5" />
+            </div>
+
+            <div class="input-field"></div>
+                <label>Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" cols="30" rows="10">Teste</textarea>
+            </div>
+        </fieldset>
+
+        <div class="input-field">
+            <p>Faixa Etária</p>
+
+            <label for="crianca">Criança:</label>
+            <input type="radio" name="faixa_etaria" id="crianca">
+
+            <label for="adulto">Adulto:</label>
+            <input type="radio" name="faixa_etaria" id="adulto">
+
+            <label for="idoso">Idoso:</label>
+            <input type="radio" name="faixa_etaria" id="idoso">
+        </div>
+
+        <class class="input-field">
+            <label for="adicionais">Adicionais</label>
+
+            <ul>
+                <li>
+                    <input type="checkbox" name="fritas" id="fritas">
+                    <label for="fritas">Batata Frita Grande</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="maionese" id="maionese" checked>
+                    <label for="maionese">Maionese</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="bacon" id="bacon">
+                    <label for="bacon">Bacon</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="queijo" id="queijo" checked>
+                    <label for="queijo">Queijo</label>
+                </li>
+            </ul>
+        </class>
+
+        <fieldset>
+            <legend>Pessoais</legend>
+            <div class="input-field">
+                <label for="color">Cor</label>
+                <input type="color" name="color" >
+            </div>
+
+            <div class="input-field">
+                <label for="date">Data e Hora:</label>
+                <input type="datetime-local">
+            </div>
+
+            <div class="input-field">
+                <label for="date">Data:</label>
+                <input type="date">
+            </div>
+        </fieldset>
+
+        <div class="input-field">
+            <label for="password">Senha:</label>
+            <input type="password" name="password" />
+        </div>
+
+        <div class="input-field">
+            <label for="file">Selecione o arquivo:</label>
+            <input type="file" id="file" name="file" multiple>
+        </div>
+
+        <div class="input-field">
+            <select name="forma_de_pagamento" id="forma_de_pagamento">
+                <option value="credit_card">Cartão de Crédito</option>
+                <option value="debit_card" selected>Cartão de Débito</option>
+                <option value="pix"selected>Pix</option>
+                <option value="credit_card" selected>Cartão de Crédito</option>
+                <option value="debit_card">Cartão de Débito</option>
+                <option value="pix">Pix</option>
+                <option value="credit_card">Cartão de Crédito</option>
+                <option value="debit_card">Cartão de Débito</option>
+                <option value="pix">Pix</option>
+                <option value="credit_card">Cartão de Crédito</option>
+                <option value="debit_card">Cartão de Débito</option>
+                <option value="pix">Pix</option>
+            </select>
+        </div>
+
+        <div class="input-field">
+            <select name="forma_de_pagamento" id="forma_de_pagamento" size="5" multiple>
+                <option value="credit_card">Cartão de Crédito</option>
+                <option value="debit_card" selected>Cartão de Débito</option>
+                <option value="pix"selected>Pix</option>
+                <option value="credit_card" selected>Cartão de Crédito</option>
+                <option value="debit_card">Cartão de Débito</option>
+                <option value="pix">Pix</option>
+                <option value="credit_card">Cartão de Crédito</option>
+                <option value="debit_card">Cartão de Débito</option>
+                <option value="pix">Pix</option>
+                <option value="credit_card">Cartão de Crédito</option>
+                <option value="debit_card">Cartão de Débito</option>
+                <option value="pix">Pix</option>
+            </select>
+        </div>
+
+        <input type="hidden" id="produto_id" name="produto_id" value="1">
+
+        <!-- <button onclick="showMessage()">Enviar</button> -->
+        <input type="button" value="Enviar" />
+        <input type="submit" value="Submeter" />
+    </form>
+
+    <script>
+        // function showMessage() {
+        //     var mensagem = document.getElementById('mensagem');
+        //     alert(mensagem.value);
+        // }
+    </script>
+</body>
+</html>
