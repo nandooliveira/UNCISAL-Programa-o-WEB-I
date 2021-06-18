@@ -31,3 +31,17 @@ botao.addEventListener("click", function(e) {
     let divResultado = document.getElementById("resultado");
     divResultado.textContent = resultado;
 });
+
+// var interruptor = document.getElementById('interruptor');
+// interruptor.addEventListener("click", function(e) {
+//     var lampada = document.getElementById('lampada');
+//     var estadoDoInterruptor = interruptor.textContent;
+
+//     if(estadoDoInterruptor == "Acender") {
+//         lampada.src = "images/acesa.png";
+//         interruptor.textContent = "Apagar";
+//     } else {
+//         lampada.src = "images/apagada.png";
+//         interruptor.textContent = "Acender";
+//     }
+// });

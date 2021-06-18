@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            border: 1px solid #333;
+            padding: 10px;
+            box-sizing: border-box;
+            width: 75%;
+            float: right;
+        }
+        ul {
+            display: inline-block;
+            width: 25%;
+            box-sizing: border-box;
+            padding: 10px;
+        }
+
+        li {
+            list-style: none;
+            padding: 10px;
+            background-color: aquamarine;
+            margin-bottom: 2px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li id="btn_inf_pessoais" style="border: 2px solid green">Informações Pessoais</li>
+        <li id="btn_inf_prof">Informações Profissionais</li>
+    </ul>
+
+    <div id="informacoes_pessoais">
+        <p>Nome: Fernando Oliveira</p>
+        <p>Email: fernando.oliveira@hey.com</p>
+    </div>
+    <div id="informacoes_profissionais" style="display: none;">
+        <p>Nome Profissional: Tio Beneh</p>
+        <p>Email Profissional: benedito.oliveira@uncisal.edu.br</p>
+    </div>
+
+    <script>
+        var btnInfPessoais = document.getElementById('btn_inf_pessoais');
+        var btnInfProf = document.getElementById('btn_inf_prof');
+
+        var divInfPessoais = document.getElementById('informacoes_pessoais');
+        var divInfProf = document.getElementById('informacoes_profissionais');
+
+        btnInfPessoais.addEventListener("click", function(event) {
+            btnInfPessoais.style.border = '2px solid green';
+            btnInfProf.style.border = '0';
+            divInfPessoais.style.display = 'inline';
+            divInfProf.style.display = 'none';
+        });
+
+        btnInfProf.addEventListener("click", function(event) {
+            btnInfPessoais.style.border = '0';
+            btnInfProf.style.border = '2px solid green';
+            divInfPessoais.style.display = 'none';
+            divInfProf.style.display = 'inline';
+        });
+    </script>
+</body>
+</html>

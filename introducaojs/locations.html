@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onde colocar o Javascript</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"></script>
+    <script src="js/js_externo.js"></script>
+    <script>
+        console.log("Passou aqui no HEAD!");
+    </script>
+</head>
+<body>
+    <h1>Meu Site</h1>
+
+    <a href="#" id="link" class="btn btn-lg btn-primary">Botão com bootstrap</a>
+    <hr>
+    <div id="content" style="border: 1px solid red;">
+
+    </div>
+    <hr>
+
+    <script>document.write("Testinho Brasil!");</script>
+
+    <script>window.alert("Testinho de Alert!");</script>
+
+    <script>
+        console.log("Passou aqui no BODY!");
+        // document.getElementById('content').textContent = '<b>Conteúdo da DIV</b>';
+        document.getElementById('content').innerHTML = '<b>Conteúdo da DIV</b>';
+
+        var link = document.getElementById('link');
+        test();
+        var a = 234 * 345, b = 34, c = 21;
+
+        function test() {
+            console.log("test");
+        }
+
+        // Comentário de uma linha
+
+        /**
+            Este é um comentário
+            de várias
+            linhas
+        */
+
+        var lastname;
+        var lastName;
+
+        function soma (numero1, numero2) {
+            return numero1 + numero2;
+        }
+
+        var resultado = soma(12, 23);
+        console.log(resultado);
+    </script>
+</body>
+</html>
